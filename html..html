@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ryu Sushi</title>
+    <style>
+        /* Estilos opcionales para el botón */
+        button {
+            background-color: #ff0000; /* Rojo */
+            color: #ffffff; /* Blanco */
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        /* Estilo para ocultar la imagen inicialmente */
+        #menuImg {
+            display: none;
+        }
+    </style>
+    <script>
+        // Función para mostrar la imagen cuando se hace clic en el botón
+        function mostrarImagen() {
+            var img = document.getElementById('menuImg');
+            img.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Ryu Sushi</h1>
+    <p>Un estilo único</p>
+    <button onclick="mostrarImagen()">Mostrar Menú</button>
+    <br>
+    <img id="menuImg" src="menu.jpg" alt="Menú de Ryu Sushi">
+</body>
+</html>
